@@ -44,7 +44,14 @@ class Car:
         return self.weight
     def get_high_speed(self):
         return self.high_speed
+    def get_info(self):
+        return f"Modeli: {c1.get_model()}\nRangi: {c1.get_color()}\nOg'irligi: {c1.get_weight()}kg\nTezligi: {c1.get_high_speed()}km/s"
     
 c1 = Car(input("Modelini kiriting: "), input("Rangini kiriting: "), int(input("O'g'irligini kiriting (kg): ")), int(input("Tezligini kiriting (km/s): ")))
+c2 = Car("KIA", "K5", 120, 250)
+c3 = Car("Mesedes-Benz", "A210", 100, 300)
 
-print(f"Modeli: {c1.get_model()}\nRangi: {c1.get_color()}\nOg'irligi: {c1.get_weight()}kg\nTezligi: {c1.get_high_speed()}km/s")
+# print(f"Modeli: {c1.get_model()}\nRangi: {c1.get_color()}\nOg'irligi: {c1.get_weight()}kg\nTezligi: {c1.get_high_speed()}km/s")
+print(c1.get_info())
+print(c2.get_info())
+print(c3.get_info())
